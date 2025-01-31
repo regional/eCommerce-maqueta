@@ -19,20 +19,32 @@ eCommerce-maqueta Ing: Junior
 Tarea 2 Crear la maqueta inicial de la página web de la plataforma e-Commerce, que demuestre el dominio de HTML y CSS avanzados, incluyendo HTML5, CSS3 y el uso de frameworks como Bootstrap o Tailwind CSS.
 E-Commerce Junior
 Estructura del Proyecto Use Docker es una plataforma diseñada para ayudar a los desarrolladores a crear, compartir y ejecutar aplicaciones en contenedores. e-commerce-Junior-front/: Directorio que contiene el código fuente de la aplicación Angular para front. e-commerce-Junior-backend/: Directorio que contiene el código fuente de la aplicación Go para Backend. e-commerce-junior-db/mysqldata/: Directorio para almacenar los datos de MySQL para base datos. e-commerce-junior-mongodb/data/: Directorio para almacenar los datos de MongoDB para usar en aws solo inegre para futuro.
+
 1-	Instalar Docker
 https://www.docker.com/products/docker-desktop/
+
 2-	Instalar Visual Code
 https://code.visualstudio.com/
+
 3-	Instalar Angular
 https://angular.dev/
+
 4-	Instalar Go
 https://go.dev/doc/install
-5-	Descargar el proyecto de Githup
+5-	Instalar mysql
+[https://go.dev/doc/install](https://www.mysql.com/downloads/)
+
+6-	Instalar Mongodb
+[https://go.dev/doc/install](https://insightsoftware.com/drivers/mongodb-odbc-jdbc/?utm_source=google&utm_medium=cpc&utm_campaign=sea-direct-simba-na-tofu&utm_content=144402013123&utm_term=mongo%20sql&gad_source=1&gclid=Cj0KCQiAhvK8BhDfARIsABsPy4il1VGVaareS1HXJOiIoyAXlePMhcgWlTNOP0wvfAfFLy7fNSC5DgwaAgLNEALw_wcB)
+
+7-	Descargar el proyecto de Githup
+
 -e-commerce-junior-backend
 -e-commerce-junior-front
 - docker-compose.backend
 - docker-compose.frontend
 - docker-compose
+  
 Pasos:
 Abre visual Code
 Abre Docker

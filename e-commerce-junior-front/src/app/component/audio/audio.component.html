@@ -1,0 +1,121 @@
+<div class="row h-100">
+  <div class="col-lg-12 h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <form class="col-md-6 p-4 shadow rounded bg-light" novalidate>
+        <h2 class="mb-4 text-primary">Formulario Interactivo</h2>
+
+        <!-- Canvas para firma -->
+        <div class="mb-3">
+          <label class="form-label">Firma Digital</label>
+          <canvas id="signaturePad"
+                  class="border rounded"
+                  width="400"
+                  height="150"
+                  style="touch-action: none; cursor: crosshair"></canvas>
+          <div class="invalid-feedback" id="canvasFeedback">
+            Por favor dibuje su firma
+          </div>
+        </div>
+
+        <!-- Resto del formulario (igual que antes) -->
+ <!-- Reproductor de audio visible -->
+ <div class="mb-4">
+  <label class="form-label">Audio de confirmación:</label>
+  <audio id="confirmationSound" controls class="w-100">
+    <source src="https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg" type="audio/ogg">
+    <source src="https://actions.google.com/sounds/v1/cartoon/cartoon_boing.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5
+  </audio>
+</div>
+
+
+        <!-- Audio de confirmación -->
+        <audio id="confirmationSound">
+          <source src="https://actions.google.com/sounds/v1/cartoon/clang.ogg" type="audio/ogg">
+          Tu navegador no soporta audio HTML5
+        </audio>
+
+        <button type="submit" class="btn btn-primary w-100 mt-3">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Estilos previos + nuevos */
+  canvas {
+    background-color: #f8f9fa;
+    transition: box-shadow 0.3s;
+  }
+
+  canvas:active {
+    box-shadow: 0 0 8px rgba(0,123,255,0.5);
+  }
+</style>
+
+<script>
+  // Script para el canvas y audio
+  const canvas = document.getElementById('signaturePad');
+  const ctx = canvas.getContext('2d');
+  let isDrawing = false;
+  let lastX = 0;
+  let lastY = 0;
+
+  // Eventos del canvas
+  canvas.addEventListener('mousedown', startDrawing);
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mouseup', endDrawing);
+  canvas.addEventListener('mouseout', endDrawing);
+
+  // Touch events
+  canvas.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    startDrawing(touch);
+  });
+
+  canvas.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    draw(touch);
+  });
+
+  function startDrawing(e) {
+    isDrawing = true;
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+  }
+
+  function draw(e) {
+    if (!isDrawing) return;
+
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.strokeStyle = '#0d6efd';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+  }
+
+  function endDrawing() {
+    isDrawing = false;
+    canvas.dispatchEvent(new Event('input')); // Activar validación
+  }
+
+  // Validación personalizada del canvas
+  canvas.addEventListener('input', () => {
+    const isEmpty = !ctx.getImageData(0, 0, canvas.width, canvas.height).data
+      .some(channel => channel !== 0);
+
+    canvas.setCustomValidity(isEmpty ? 'Firma requerida' : '');
+  });
+
+  // Reproducir sonido al enviar
+  document.querySelector('form').addEventListener('submit', (e) => {
+    if (!canvas.checkValidity()) return;
+
+    document.getElementById('confirmationSound').play();
+    // Aquí iría el código para manejar el envío del formulario
+  });
+</script>

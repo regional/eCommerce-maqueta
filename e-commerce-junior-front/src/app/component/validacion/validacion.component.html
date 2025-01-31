@@ -1,0 +1,60 @@
+<div class="row h-100">
+  <div class="col-lg-12 h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <form class="col-md-6 p-4 shadow rounded bg-light" novalidate>
+        <h2 class="mb-4 text-primary">Formulario de Registro</h2>
+
+        <!-- Nombre Completo -->
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre Completo</label>
+          <input type="text" class="form-control" id="nombre"
+                 required
+                 minlength="3"
+                 pattern="[A-Za-z ]+"
+                 title="Solo letras y espacios">
+          <div class="mb-4 text-primary">
+            Por favor ingrese un nombre válido (mínimo 3 caracteres)
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" required>
+          <div class="mb-4 text-primary">
+            Por favor ingrese un correo electrónico válido
+          </div>
+        </div>
+
+        <!-- Teléfono -->
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control" id="telefono"
+                 pattern="[0-9]{9}"
+                 title="9 dígitos sin espacios ni guiones"
+                 required>
+          <div class="mb-4 text-primary">
+            El teléfono debe tener 9 dígitos
+          </div>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password"
+                 required
+                 minlength="8"
+                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                 title="Mínimo 8 caracteres con al menos una mayúscula, una minúscula y un número">
+          <div class="mb-4 text-primary">
+            La contraseña debe tener al menos 8 caracteres, una mayúscula, una minúscula y un número
+          </div>
+        </div>
+
+        <!-- Botón de Envío -->
+        <button type="submit" class="btn btn-primary w-100 mt-3">Registrarse</button>
+      </form>
+    </div>
+  </div>
+</div>
+

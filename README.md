@@ -8,7 +8,7 @@ Use Docker es una plataforma diseñada para ayudar a los desarrolladores a crear
 e-commerce-Junior-front/: Directorio que contiene el código fuente de la aplicación Angular para front.
 e-commerce-Junior-backend/: Directorio que contiene el código fuente de la aplicación Go para Backend.
 e-commerce-junior-db/mysqldata/: Directorio para almacenar los datos de MySQL para base datos.
-e-commerce-junior-mongodb/data/: Directorio para almacenar los datos de MongoDB para usar en aws solo inegre para futuro.
+e-commerce-junior-mongodb/data/: Directorio para almacenar los datos de MongoDB para usar en AWS amazon.
 
 Creacion de login
 ![Captura de pantalla 2025-01-30 175231](https://github.com/user-attachments/assets/8db85bc3-6ea8-4eab-af01-7a1e6ba66383)

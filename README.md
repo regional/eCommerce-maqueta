@@ -1,6 +1,50 @@
 # eCommerce-maqueta Ing: Junior 
  Tarea 2 Crear la maqueta inicial de la página web de la plataforma e-Commerce, que demuestre el dominio de HTML y CSS avanzados, incluyendo HTML5, CSS3 y el uso de frameworks como Bootstrap o Tailwind CSS.
 
+Tarea: Asignación No. 2 Diseño de la maqueta y prototipo inicial de la Interfaz de usuario de la Plataforma eCommerce. Interactiva y Responsiva usando HTML5, CSS3 y Bootstrap
+Crear la maqueta inicial de la página web de la plataforma e-Commerce, que demuestre el dominio de HTML y CSS avanzados, incluyendo HTML5, CSS3 y el uso de frameworks como Bootstrap o Tailwind CSS. La tarea final deberá ser subida a un repositorio público en GitHub, y el README del repositorio deberá contener todos los detalles y capturas de pantalla de la tarea.
+Requerimientos:
+La página debe incluir varios elementos de HTML5, como etiquetas semánticas, formularios con validación, video, audio o canvas.
+Implementar CSS3 para el diseño, incluyendo selectores avanzados, animaciones y transiciones.
+Aplicar principios de diseño web responsivo para asegurar que la página sea compatible con diferentes tamaños de pantalla y dispositivos.
+Integrar un framework de CSS (Bootstrap o Tailwind CSS) para mejorar el diseño y la experiencia del usuario.
+La página debe ser no solo funcional sino también estéticamente atractiva.
+Incluir interactividad y creatividad en el diseño para demostrar comprensión de las capacidades de HTML5 y CSS3.
+Crear un archivo README detallado en el repositorio de GitHub. El README debe incluir una descripción del proyecto, las tecnologías utilizadas y cómo se implementaron. Incluir capturas de pantalla de la página web en diferentes tamaños de pantalla para demostrar la responsividad. Documentar cualquier desafío enfrentado y cómo se resolvió.
+
+Repositorio GitHub 
+https://github.com/regional/eCommerce-maqueta
+
+eCommerce-maqueta Ing: Junior
+Tarea 2 Crear la maqueta inicial de la página web de la plataforma e-Commerce, que demuestre el dominio de HTML y CSS avanzados, incluyendo HTML5, CSS3 y el uso de frameworks como Bootstrap o Tailwind CSS.
+E-Commerce Junior
+Estructura del Proyecto Use Docker es una plataforma diseñada para ayudar a los desarrolladores a crear, compartir y ejecutar aplicaciones en contenedores. e-commerce-Junior-front/: Directorio que contiene el código fuente de la aplicación Angular para front. e-commerce-Junior-backend/: Directorio que contiene el código fuente de la aplicación Go para Backend. e-commerce-junior-db/mysqldata/: Directorio para almacenar los datos de MySQL para base datos. e-commerce-junior-mongodb/data/: Directorio para almacenar los datos de MongoDB para usar en aws solo inegre para futuro.
+1-	Instalar Docker
+https://www.docker.com/products/docker-desktop/
+2-	Instalar Visual Code
+https://code.visualstudio.com/
+3-	Instalar Angular
+https://angular.dev/
+4-	Instalar Go
+https://go.dev/doc/install
+5-	Descargar el proyecto de Githup
+-e-commerce-junior-backend
+-e-commerce-junior-front
+- docker-compose.backend
+- docker-compose.frontend
+- docker-compose
+Pasos:
+Abre visual Code
+Abre Docker
+
+ ![image](https://github.com/user-attachments/assets/e41e5e6d-d10b-434a-9597-22d1d2cf7b98)
+
+Ejecuta el Comando: docker compose up –buil
+ ![image](https://github.com/user-attachments/assets/c043638e-ddbf-46af-b52c-6295bb590d5b)
+
+Si dice conexión exitosa abre en el navegador http://localhost:4200/
+![image](https://github.com/user-attachments/assets/4a3e927a-f720-48c3-a314-bc79fc54457e)
+
 E-Commerce Junior
 
 Estructura del Proyecto

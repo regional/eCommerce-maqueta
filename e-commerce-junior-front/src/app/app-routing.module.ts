@@ -5,6 +5,7 @@ import { FullComponent } from './layouts/full/full.component';
 import { AuthGuard } from './helpers/auth.guard';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/login/register/register.component';
+import { VideoComponent } from './component/video/video.component';
 
 export const Approutes: Routes = [
   {
@@ -22,19 +23,19 @@ export const Approutes: Routes = [
         path: 'dashboard',
         canActivate: [AuthGuard],
         loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
-        data: { roles: ['admin'] }
+        data: { roles: ['admin', 'seller', 'shooper'] }
       },
       {
         path: 'products',
         canActivate: [AuthGuard],
         loadChildren: () => import('./pages/products/products.module').then(m => m.ProductsModule),
-        data: { roles: ['admin', 'seller'] }
+        data: { roles: ['admin', 'seller', 'shooper'] }
       },
       {
         path: 'people',
         canActivate: [AuthGuard],
         loadChildren: () => import('./pages/people/people.module').then(m => m.PeopleModule),
-        data: { roles: ['admin'] }
+        data: { roles: ['admin', 'seller', 'shooper'] }
       },
       {
         path: 'shoppingcart',
@@ -45,11 +46,17 @@ export const Approutes: Routes = [
       {
         path: 'about',
         canActivate: [AuthGuard],
-        loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+        loadChildren: () => import('./about/about.module').then(m => m.AboutModule),
+        data: { roles: ['admin', 'seller', 'shooper'] }
       },
       {
         path: 'component',
         loadChildren: () => import('./component/component.module').then(m => m.ComponentsModule),
+
+      },
+      {
+        path: 'video',
+        loadChildren: () => import('./component/video/video.component').then(m => m.VideoComponent),
 
       },
       {

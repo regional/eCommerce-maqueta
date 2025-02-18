@@ -252,9 +252,18 @@ Producto
 Crear Listado de Producto Inventario
  
  ![image](https://github.com/user-attachments/assets/f609f867-0b6f-421d-b023-e2598e961d83)
+
+ ![image](https://github.com/user-attachments/assets/9e808cbe-1048-448d-a917-f0429f6ed88d)
+
+ 
+
  
 Administrar Usuario Update create delete
  ![image](https://github.com/user-attachments/assets/8f9630b1-effe-4f76-9e71-20347e416507)
+
+Carrito de Compra 
+![image](https://github.com/user-attachments/assets/3dbad2d0-47e7-439f-858e-a8384176f4a5)
+
 
 
 

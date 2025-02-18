@@ -15,9 +15,9 @@ services:
     container_name: e-commerce-junior-db
     environment:
       MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_USER: harlin
+      MYSQL_USER: root
       MYSQL_PASSWORD: 1234
-      MYSQL_DATABASE: majesticdb
+      MYSQL_DATABASE: ecommercedbjunior
     volumes:
       - ./e-commerce-junior-db/mysqldata:/var/lib/mysql
     ports:
@@ -33,10 +33,10 @@ services:
     environment:
       - DB_HOST=db
       - DB_PORT=3306
-      - DB_USER=harlin
+      - DB_USER=root
       - DB_PASSWORD=1234
-      - DB_NAME=majesticdb
-      - MONGODB_URI=mongodb://mongodb:27017
+      - DB_NAME=ecommercedbjunior
+      - MONGODB_URI=mongodb://localhost:27018/majesticdb"
     ports:
       - "3000:3000"
     depends_on:

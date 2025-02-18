@@ -88,6 +88,8 @@ Codigo html5 y css
 ![Captura de pantalla 2025-01-31 085754](https://github.com/user-attachments/assets/8571675b-9238-4751-ad05-f7db3944da17)
 ![Captura de pantalla 2025-01-31 085857](https://github.com/user-attachments/assets/131b2fb5-9da8-4263-a4f9-f228a703ba8c)
 
+
+
 http://localhost:4200/login
  
 Validador de Usuario 
@@ -237,10 +239,23 @@ Para Iniciar el login cree la Base Datos MYSQL
 ![image](https://github.com/user-attachments/assets/197c36fa-8873-4cd5-be43-c2fe8f5f939c)
 
 
+Creacion Producto Responsive 
+
+![image](https://github.com/user-attachments/assets/b83f2106-5c63-4e96-bbdd-e668bce96071)
+
+Producto 
+
+![image](https://github.com/user-attachments/assets/4ebaa4a1-d2e1-4252-a343-f89211457b4f)
+
+
 
 Crear Listado de Producto Inventario
  
  ![image](https://github.com/user-attachments/assets/f609f867-0b6f-421d-b023-e2598e961d83)
+ 
+Administrar Usuario Update create delete
+ ![image](https://github.com/user-attachments/assets/8f9630b1-effe-4f76-9e71-20347e416507)
+
 
 
 

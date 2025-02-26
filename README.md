@@ -264,12 +264,75 @@ Administrar Usuario Update create delete
 Carrito de Compra 
 ![image](https://github.com/user-attachments/assets/3dbad2d0-47e7-439f-858e-a8384176f4a5)
 
+Desarrollo de un Chatbot 
+He creado una variable sendMessage que envia en mensaje a apikey de openaiService
+Donde va a retornar un getChatResponse  de OpenaiService
+ 
+
+Vamos a desarrollar un Chatbot con inteligencia Artificial 
+ chatbot.component.html
 
 
 
+![Screenshot 2025-02-21 101624](https://github.com/user-attachments/assets/9290a9f8-7b28-40bd-bb7f-0fd6683a4400)
 
 
 
+![Screenshot 2025-02-21 121011](https://github.com/user-attachments/assets/83880f47-57a4-4b66-862a-604d53847f9c)
 
 
+![image](https://github.com/user-attachments/assets/4a0f6a1c-6873-40d5-bd33-19b14f7d9054)
 
+chatbot.component.scss
+![image](https://github.com/user-attachments/assets/4042b9e9-ad3d-4678-a07d-e05374a74073)
+
+chatbot.component.ts
+![image](https://github.com/user-attachments/assets/bc9ccd9e-7110-4780-a2e7-6db9f31642c5)
+![image](https://github.com/user-attachments/assets/e6b57abf-9917-4eeb-88d9-e603793779be)
+
+openai.service.ts
+
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { catchError, tap, throwError } from 'rxjs';
+import { ChatMessage } from '../models/ChatMessage';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class OpenaiService {
+
+  private apiUrl = 'https://api.deepseek.com'; // Reemplaza con tu API DeepSeek
+
+  constructor(private http: HttpClient) { }
+
+  getChatResponse(messages: ChatMessage[]) {
+    return this.http.post<any>('proj_9iCUHmbUayBB7mwghyagyOaZ', {
+      messages: messages.map(msg => ({
+        role: msg.role,
+        content: msg.content
+      }))
+    });
+  }
+
+  private handleError(error: HttpErrorResponse) {
+    console.error('Error detallado:', error);
+    let errorMessage = 'Ocurrió un error en la comunicación.';
+
+    if (error.status === 401) {
+      errorMessage = 'Error de autenticación. Verifica tu API key de DeepSeek.';
+    } else if (error.status === 429) {
+      errorMessage = 'Se ha excedido el límite de solicitudes. Intenta más tarde.';
+    } else if (error.status === 500) {
+      errorMessage = 'Error en el servidor. Intenta más tarde.';
+    }
+
+    return throwError(() => new Error(errorMessage));
+  }
+}
+
+
+![image](https://github.com/user-attachments/assets/fdfd5e2c-6164-45e2-bc7c-ed5e5d587234)
+
+Chatboot Flotante
+![image](https://github.com/user-attachments/assets/7707fc0f-9411-4027-b19b-451b7812f13f)

@@ -336,3 +336,6 @@ export class OpenaiService {
 
 Chatboot Flotante
 ![image](https://github.com/user-attachments/assets/7707fc0f-9411-4027-b19b-451b7812f13f)
+
+![WhatsApp Image 2025-03-01 at 12 16 42 PM](https://github.com/user-attachments/assets/5aa94c9a-195a-4ae1-80a1-1889b7b86401)
+

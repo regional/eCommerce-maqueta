@@ -50,7 +50,7 @@ services:
       dockerfile: Dockerfile
       args:
         API_URL: http://44.200.231.21:3000
-        OPENAI_API_KEY: OPENAI_API_KEY
+        OPENAI_API_KEY: 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
     container_name: e-commerce-junior-frontend
     ports:
       - "4200:80"

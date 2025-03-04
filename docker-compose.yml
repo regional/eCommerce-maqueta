@@ -49,7 +49,7 @@ services:
       context: ./e-commerce-junior-front
       dockerfile: Dockerfile
       args:
-        API_URL: http://localhost:3000
+        API_URL: http://44.200.231.21:3000
         OPENAI_API_KEY: OPENAI_API_KEY
     container_name: e-commerce-junior-frontend
     ports:

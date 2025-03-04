@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    API_URL: process.env['API_URL'],
-    openaiApiKey: process.env['OPENAI_API_KEY'] || ''
+    API_URL: process.env['https://api.openai.com/v1/chat/completions'],
+    openaiApiKey: process.env['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'] || ''
 };

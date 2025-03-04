@@ -9,7 +9,7 @@ console.log('OPENAI_API_KEY:', process.env.OPENAI_API_KEY);
 const envConfig = `
 export const environment = {
   production: true,
-  API_URL: '${process.env.API_URL || 'http://localhost:3000'}',
+  API_URL: '${process.env.API_URL || 'http://44.200.231.21:3000'}',
   openaiApiKey: '${process.env.OPENAI_API_KEY || ''}'
 };
 `;

@@ -339,3 +339,113 @@ Chatboot Flotante
 
 ![WhatsApp Image 2025-03-01 at 12 16 42 PM](https://github.com/user-attachments/assets/5aa94c9a-195a-4ae1-80a1-1889b7b86401)
 
+
+1-	Instalar Docker
+https://www.docker.com/products/docker-desktop/
+2-	Elastic Beanstalk AWS: Amazon Web Services (AWS) Elastic Beanstalk esun servicio que ayuda a los usuarios a implementar y administrar aplicaciones en la nube de AWSEs una "plataforma como servicio" (PaaS) que maneja muchos de los detalles de la implementación de aplicaciones.
+Esta aplicaciones vienen pre instalada
+3-	Instalar Angular
+https://angular.dev/
+4-	Instalar Go
+https://go.dev/doc/install
+
+5-	Instalar mysql  Amazon RDS
+[https://go.dev/doc/install](https://www.mysql.com/downloads/)
+Crear Base datos ecommerce usuario : root  contraseña: Manuel15
+ 
+ 
+6-	Instalar Mongodb
+[https://go.dev/doc/install](https://insightsoftware.com/drivers/mongodb-odbc-jdbc/?utm_source=google&utm_medium=cpc&utm_campaign=sea-direct-simba-na-tofu&utm_content=144402013123&utm_term=mongo%20sql&gad_source=1&gclid=Cj0KCQiAhvK8BhDfARIsABsPy4il1VGVaareS1HXJOiIoyAXlePMhcgWlTNOP0wvfAfFLy7fNSC5DgwaAgLNEALw_wcB)
+
+7-	Descargar el proyecto de Githup
+-e-commerce-junior-backend
+-e-commerce-junior-front
+- docker-compose.backend
+- docker-compose.frontend
+- docker-compose
+Pasos: 
+
+Abril Elastic Beanstalk AWS crear Aplicación ecommerce   
+
+
+Crear entorno y usar Docker como plataforma
+ 
+
+
+Crear AWS EC2 ve a instancia lanzar Instancia y busca el nombre Ecoomerce-env se genera automático  
+ 
+
+
+
+Lo seleciona y le da a conectar para usar la consola 
+ 
+mkdir www
+sudo chmod o+w www
+sudo chown ec2-user www
+docker-compose up --build
+ 
+ 
+
+Usa el comando para crear una carpeta para alojar el código yo siempre uso var/www 
+-Mkdir var/www
+-git clone  https://github.com/regional/eCommerce-maqueta.git
+Experimentamos con FileZilla que este creada para pasar el código manual o usar git clone 
+
+
+ 
+
+
+Ejecuta el Comando: docker compose up –buil
+
+
+ 
+ 
+ 
+ 
+Perfecto el backend genero la db con exito
+
+
+
+
+
+http://44.214.37.214:4200/login  usuario:admin password:123456
+http://ecommercebiu.us-east-1.elasticbeanstalk.com:4200/login 
+ 
+ 
+
+
+
+Para eliminar contenedor docker
+docker system prune -a –volumes
+docker system prune -a --volumes
+ 
+Importante debe abril los puertos 80:3306:4200:3000
+ 
+
+
+
+Como funciona perfecto vamos a seguir configurando el chatbot para que funcione la API de inteligencia artificial  he creado 2 forma de chatboot una la común un asistente que responde las pregunta y envía la información a el correo de el administrador de pedidos o preguntas como devolución etc. Responde toda pregunta y se ve la lista de los productos y envia a el correo electrónico . 
+ 
+ 
+
+
+ 
+
+ 
+De esta forma podemos interactuar con el cliente y dar repuesta desde el administrador.
+Segunda Opción es una chatboot que busque producto recomiende y selecciones los producto de Forma automática y de recomendación  de productos con la Inteligencia artificial que piense sola y selecciones combinaciones de vestimenta de ejemplo ejemplo esta pagina https://www.accio.com/  
+ 
+Buscar producto con IA
+ 
+ 
+
+Compra por mí la IA Compra automático y lo agrega a el carrito
+ 
+El chatboot responde perfecto consume token api con balance igual que aws 
+
+ 
+ 
+
+ 
+
+

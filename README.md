@@ -352,8 +352,10 @@ https://go.dev/doc/install
 5-	Instalar mysql  Amazon RDS
 [https://go.dev/doc/install](https://www.mysql.com/downloads/)
 Crear Base datos ecommerce usuario : root  contraseña: Manuel15
- 
- 
+ ![image](https://github.com/user-attachments/assets/81c165a3-45a2-476e-b094-bc946eb2f888)
+
+ ![image](https://github.com/user-attachments/assets/0b2ed9b7-e2c1-4f67-921b-ca8954dbc1c1)
+
 6-	Instalar Mongodb
 [https://go.dev/doc/install](https://insightsoftware.com/drivers/mongodb-odbc-jdbc/?utm_source=google&utm_medium=cpc&utm_campaign=sea-direct-simba-na-tofu&utm_content=144402013123&utm_term=mongo%20sql&gad_source=1&gclid=Cj0KCQiAhvK8BhDfARIsABsPy4il1VGVaareS1HXJOiIoyAXlePMhcgWlTNOP0wvfAfFLy7fNSC5DgwaAgLNEALw_wcB)
 
@@ -366,25 +368,31 @@ Crear Base datos ecommerce usuario : root  contraseña: Manuel15
 Pasos: 
 
 Abril Elastic Beanstalk AWS crear Aplicación ecommerce   
+![image](https://github.com/user-attachments/assets/ea4e456d-8503-4d5a-9cd4-ce0169a810b6)
 
 
 Crear entorno y usar Docker como plataforma
  
+![image](https://github.com/user-attachments/assets/989222d2-9544-4c34-98dd-8468df6c90d1)
 
 
 Crear AWS EC2 ve a instancia lanzar Instancia y busca el nombre Ecoomerce-env se genera automático  
  
+![image](https://github.com/user-attachments/assets/9d63f534-3ff6-46e3-b40b-cb8e52df9338)
 
 
 
 Lo seleciona y le da a conectar para usar la consola 
- 
+ ![image](https://github.com/user-attachments/assets/612f4789-70ba-4e6e-95ca-eb39bc6777a4)
+
 mkdir www
 sudo chmod o+w www
 sudo chown ec2-user www
 docker-compose up --build
  
- 
+ ![image](https://github.com/user-attachments/assets/e4a97030-eb54-437c-96a5-42779ac44f60)
+
+![image](https://github.com/user-attachments/assets/b208a843-deb2-48d3-bcd4-9fbf4dd78b30)
 
 Usa el comando para crear una carpeta para alojar el código yo siempre uso var/www 
 -Mkdir var/www
@@ -393,14 +401,20 @@ Experimentamos con FileZilla que este creada para pasar el código manual o usar
 
 
  
+![image](https://github.com/user-attachments/assets/6386ecd3-ad6d-465c-8b66-fe0648f0f8ba)
 
+![image](https://github.com/user-attachments/assets/323e89c0-de4b-4e2e-a56b-0e506aa56ed8)
 
 Ejecuta el Comando: docker compose up –buil
 
+![image](https://github.com/user-attachments/assets/85d2056e-2262-4a14-82bd-e37203a7235e)
 
- 
- 
- 
+ ![image](https://github.com/user-attachments/assets/be79da2b-ea55-4382-a820-81735c9ec3d7)
+
+ ![image](https://github.com/user-attachments/assets/8c684f5b-4fc4-4831-b9ea-39a053c22d8e)
+
+ ![image](https://github.com/user-attachments/assets/c7feb9db-317d-4245-85cb-a9e480ec896c)
+
  
 Perfecto el backend genero la db con exito
 
@@ -410,8 +424,10 @@ Perfecto el backend genero la db con exito
 
 http://44.214.37.214:4200/login  usuario:admin password:123456
 http://ecommercebiu.us-east-1.elasticbeanstalk.com:4200/login 
- 
- 
+ ![image](https://github.com/user-attachments/assets/7d841c20-e316-4d50-ba10-d0db906c9f60)
+
+ ![image](https://github.com/user-attachments/assets/12fb99cb-c411-422e-aeb2-e571d3d7a577)
+
 
 
 
@@ -421,29 +437,43 @@ docker system prune -a --volumes
  
 Importante debe abril los puertos 80:3306:4200:3000
  
+![image](https://github.com/user-attachments/assets/05779fd8-0e78-4005-bb0e-44f6043d28b5)
 
+![image](https://github.com/user-attachments/assets/4e192016-88cc-4f16-bc28-7166a1411f5c)
 
 
 Como funciona perfecto vamos a seguir configurando el chatbot para que funcione la API de inteligencia artificial  he creado 2 forma de chatboot una la común un asistente que responde las pregunta y envía la información a el correo de el administrador de pedidos o preguntas como devolución etc. Responde toda pregunta y se ve la lista de los productos y envia a el correo electrónico . 
  
  
 
+![image](https://github.com/user-attachments/assets/c9c04fa3-2f72-43db-a773-7431064dac54)
 
  
+![image](https://github.com/user-attachments/assets/3ab6de9d-13f7-44ab-ba10-f3469d2e39f9)
 
- 
+ ![image](https://github.com/user-attachments/assets/a5948670-d327-4d75-a336-07adfddf2135)
+
 De esta forma podemos interactuar con el cliente y dar repuesta desde el administrador.
 Segunda Opción es una chatboot que busque producto recomiende y selecciones los producto de Forma automática y de recomendación  de productos con la Inteligencia artificial que piense sola y selecciones combinaciones de vestimenta de ejemplo ejemplo esta pagina https://www.accio.com/  
- 
+ ![image](https://github.com/user-attachments/assets/10f69df8-80ff-4a47-bbd7-6818ffbbc6a7)
+![image](https://github.com/user-attachments/assets/0c9c6bed-a9b1-47b0-a87c-60133ec096be)
+
 Buscar producto con IA
  
- 
+ ![image](https://github.com/user-attachments/assets/34840b00-2bbc-4469-a298-519d76d744fd)
+
 
 Compra por mí la IA Compra automático y lo agrega a el carrito
- 
+ ![image](https://github.com/user-attachments/assets/ffead393-2719-4f22-a0e5-9f78d6a47b77)
+![image](https://github.com/user-attachments/assets/af15588b-b1b5-4dab-8371-5373a6b1e674)
+
 El chatboot responde perfecto consume token api con balance igual que aws 
 
- 
+ ![image](https://github.com/user-attachments/assets/16fbde36-4f92-45c0-8606-d12e6454e033)
+![image](https://github.com/user-attachments/assets/f0d57556-d632-44c1-b201-03a1178b5dcd)
+![image](https://github.com/user-attachments/assets/4d4baa6e-0474-4f98-9254-a84a78499da8)
+
+
  
 
  

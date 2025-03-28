@@ -338,7 +338,9 @@ Chatboot Flotante
 ![image](https://github.com/user-attachments/assets/7707fc0f-9411-4027-b19b-451b7812f13f)
 
 ![WhatsApp Image 2025-03-01 at 12 16 42 PM](https://github.com/user-attachments/assets/5aa94c9a-195a-4ae1-80a1-1889b7b86401)
+<img width="1277" alt="image" src="https://github.com/user-attachments/assets/6d78c4e7-2efa-4a41-ad53-2d0b8bc87667" />
 
+<img width="1277" alt="image" src="https://github.com/user-attachments/assets/7fc04c7d-fece-42d0-8279-d8f3698dd620" />
 
 1-	Instalar Docker
 https://www.docker.com/products/docker-desktop/

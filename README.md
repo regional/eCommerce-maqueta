@@ -468,6 +468,8 @@ Buscar producto con IA
 Compra por mí la IA Compra automático y lo agrega a el carrito
  ![image](https://github.com/user-attachments/assets/ffead393-2719-4f22-a0e5-9f78d6a47b77)
 ![image](https://github.com/user-attachments/assets/af15588b-b1b5-4dab-8371-5373a6b1e674)
+<img width="1277" alt="image" src="https://github.com/user-attachments/assets/52edd9c3-8ddf-4c63-91e7-b896e814bd91" />
+
 
 El chatboot responde perfecto consume token api con balance igual que aws 
 

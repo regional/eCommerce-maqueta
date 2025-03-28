@@ -1,13 +1,62 @@
 <div class="chat-container">
-  <div class="chat-history">
-    <div *ngFor="let message of chatHistory">
-      <p>{{ message }}</p>
+  <h2 class="chat-title">Agente AI - Asistente Inteligente</h2>
+
+  <div *ngIf="addedToCartMessage" class="alert alert-success">
+    {{ addedToCartMessage }}
+  </div>
+
+  <div class="chat-history" #chatHistory>
+    <div *ngFor="let message of messages" class="message-container">
+      <p [ngClass]="{'user-message': message.role === 'user', 'bot-message': message.role === 'assistant'}">
+        <span *ngIf="message.role === 'user'" class="message-role">Tú:</span>
+        <span *ngIf="message.role === 'assistant'" class="message-role">Agente AI:</span>
+        {{ message.content }}
+      </p>
+    </div>
+    <div *ngIf="isLoading" class="loading-indicator">
+      <div class="typing-indicator">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </div>
-  <div class="chat-input">
-    <input [(ngModel)]="userInput" placeholder="Escribe tu pregunta" (keydown.enter)="sendMessage()" />
-    <button (click)="sendMessage()" class="btn btn-success">
-      <i class="bi bi-send"></i>
-    </button>
+
+  <div class="search-container">
+    <div class="search-input">
+      <input
+        [(ngModel)]="userInput"
+        placeholder="Pregúntame lo que sea..."
+        (keydown.enter)="sendMessage()"
+        [disabled]="isLoading"
+      />
+      <button
+        (click)="sendMessage()"
+        class="search-button"
+        [disabled]="isLoading || !userInput.trim()">
+        <i class="bi bi-send"></i>
+      </button>
+    </div>
+    <div class="quick-commands">
+      <button (click)="userInput = 'busca productos'; sendMessage()" [disabled]="isLoading">Buscar productos</button>
+      <button (click)="userInput = 'recomiéndame algo'; sendMessage()" [disabled]="isLoading">Recomendaciones</button>
+      <button (click)="userInput = 'ayuda'; sendMessage()" [disabled]="isLoading">Ayuda</button>
+    </div>
+  </div>
+
+  <div class="product-results" *ngIf="searchResults.length > 0">
+    <h3>Resultados ({{ searchResults.length }})</h3>
+    <div class="product-grid">
+      <div class="product-card" *ngFor="let product of searchResults">
+        <img [src]="product.image || 'assets/images/product-placeholder.png'" [alt]="product.title" class="product-image">
+        <div class="product-info">
+          <h4>{{ product.title }}</h4>
+          <p class="product-price">{{ product.price | currency }}</p>
+          <button class="add-to-cart-btn" (click)="addToCart(product)">
+            <i class="bi bi-cart-plus"></i> Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
